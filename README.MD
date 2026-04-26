@@ -29,6 +29,10 @@
 
 ###  Решение 1
 
+Связи с проблемой использования vagrant, Gitlab был развернут на Yandex Cloud с помощью terraform.
+
+В разных заданиях фигурируют разные ip-адреса, т.к. были сделаны в разные дни, что повлияло на изменение ip-адреса.
+
 Скриншот 1
 
 ![](img/Screenshot_runner.png)
@@ -52,7 +56,19 @@
 
 ###  Решение 2
 
-[Файл gitlab-ci.yml](Gitlab/my-project/.gitlab-ci.yml)
+[Файл gitlab-ci.yml](.gitlab-ci_1.yml)
+
+Скриншот Pipeline
+
+![](img/Screenshot_pipeline.png)
+
+Скриншот Job Test
+
+![](img/Screenshot_job_test.png)
+
+Скриншот Job Build
+
+![](img/Screenshot_job_build.png)
 
 ---
 ## Дополнительные задания* (со звёздочкой)
@@ -69,3 +85,7 @@
  - тесты запускались только при изменении файлов с расширением *.go.
 
 В качестве ответа добавьте в шаблон с решением файл gitlab-ci.yml своего проекта или вставьте код в соответсвующее поле в шаблоне.
+
+###  Решение 3
+
+[Файл gitlab-ci.yml](.gitlab-ci_2.yml)

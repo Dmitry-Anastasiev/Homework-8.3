@@ -1,0 +1,21 @@
+stages:
+  - parallel
+
+job_test:
+  stage: parallel
+  image: golang:1.21
+  script:
+   - go test .
+  tags:
+   - netology
+  rules:
+   - changes: ["*.go"]
+
+job_build:
+  stage: parallel
+  image: docker:latest
+  script:
+   - docker build .
+  tags:
+   - netology
+  needs: []
